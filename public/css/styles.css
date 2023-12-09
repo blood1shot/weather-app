@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+p, body {
+    margin: 0;
+}
+
+h1 {
+    color: grey;
+}
+
+.about-image {
+    width: 150px;
+    height: 150px;
+}
+
+.app-header__wrapper {
+    padding: 15px 10px;
+    width: 100%;
+    background-color: #48a2a8;
+}
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-header p {
+    color: #ffffff;
+    font-size: 20px;
+}
+.app-header__nav {
+    display: flex;
+}
+.app-header__nav a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.app-header__nav a:first-child {
+    margin-right: 10px;
+}
+.app-header__main-link {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.app-footer {
+    padding: 10px 5px;
+    width: 100%;
+    background-color: #48a2a8;
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.main-layout__wrapper {
+    min-height: calc(100vh - 99.5px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.not-found__wrapper h2 {
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.not-found__wrapper p {
+    text-align: center;
+}
