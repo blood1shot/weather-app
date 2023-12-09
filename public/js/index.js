@@ -21,7 +21,7 @@ weatherForm.addEventListener("submit", (e) => {
   weatherError.textContent = "";
   button.disabled = true;
 
-  fetch(`http://localhost:3000/weather?address=${location}`).then((res) => {
+  fetch(`/weather?address=${location}`).then((res) => {
     res.json().then((data) => {
       console.log(data);
       if (data.error) {
@@ -29,7 +29,7 @@ weatherForm.addEventListener("submit", (e) => {
         weatherError.textContent = data.error;
       } else if (data.current) {
         weatherTitle.textContent = `Weather info in ${data.location.name}`;
-        weatherInfo.textContent = `${data.current.observation_time}, ${data.current.weather_descriptions[0]}, feels like ${data.current.feelslike}, wind speed ${data.current.wind_speed}`;
+        weatherInfo.textContent = `${data.location.localtime}, ${data.current.weather_descriptions[0]}, feels like ${data.current.feelslike}, wind speed ${data.current.wind_speed}`;
       }
       button.disabled = false;
     });

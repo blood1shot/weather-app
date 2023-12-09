@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/app.cjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.cjs"
   },
   "keywords": [],
   "author": "",
